@@ -9,7 +9,7 @@
 |password|string|null: false|
 
 ### Association
-- has_many :massages
+- has_many :messages
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 
@@ -42,8 +42,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|content|text|null: false|
-|image|text|null: false|
+|content|text||
+|image|text||
 |user|references|null: false, foreign_key: true|
 |group|references|null: false, foreign_key: true|
 
